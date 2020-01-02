@@ -25,7 +25,9 @@
               <i class="mdi mdi-minus"></i>
             </button>
           </span>
-          <input type="text" class="form-control">
+
+          <input type="text" class="form-control" name="percent" [(ngModel)]="percent">
+
           <span class="input-group-btn">
             <button class="btn btn-primary" type="button"><i class="mdi mdi-plus" (click)="changeValue(+5)"></i></button>
           </span>
