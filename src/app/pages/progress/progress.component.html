@@ -6,15 +6,15 @@
 
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-               [attr.aria-valuenow]="percent"
-               aria-valuemin="0" aria-valuemax="100" [style.width]="percent + '%'">
+               [attr.aria-valuenow]="percentBlue"
+               aria-valuemin="0" aria-valuemax="100" [style.width]="percentBlue + '%'">
           </div>
         </div>
           <br/>
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
-               [attr.aria-valuenow]="percent"
-               aria-valuemin="0" aria-valuemax="100" [style.width]="percent + '%'">
+               [attr.aria-valuenow]="percentGreen"
+               aria-valuemin="0" aria-valuemax="100" [style.width]="percentGreen + '%'">
           </div>
         </div>
 
@@ -29,7 +29,7 @@
     <div class="card">
       <div class="card-body">
 
-        <app-increaser></app-increaser>
+        <app-increaser (updateValue)="percentBlue = $event"  name="Progress Azul" [percent]="percentBlue"></app-increaser>
 
       </div>
     </div>
@@ -39,7 +39,7 @@
     <div class="card">
       <div class="card-body">
 
-        <app-increaser></app-increaser>
+        <app-increaser (updateValue)="percentGreen = $event" name="Progress Verde" [percent]="percentGreen"></app-increaser>
 
       </div>
     </div>
