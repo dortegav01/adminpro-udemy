@@ -7,6 +7,8 @@ import {DashboardComponent} from './dashboard/dashboard.component';
 import {PagesComponent} from './pages.component';
 import {SharedModule} from '../shared/shared.module';
 import {FormsModule} from '@angular/forms';
+import {AppModule} from '../app.module';
+import {IncreaserComponent} from '../components/increaser/increaser.component';
 
 
 @NgModule({
@@ -14,7 +16,8 @@ import {FormsModule} from '@angular/forms';
     PagesComponent,
     DashboardComponent,
     ProgressComponent,
-    Graficas1Component
+    Graficas1Component,
+    IncreaserComponent
   ],
   imports: [
     SharedModule,

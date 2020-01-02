@@ -14,15 +14,4 @@ export class ProgressComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  changeValue(value: number) {
-    // tslint:disable-next-line:triple-equals
-    if ( (this.percent == 0 && value < 0 )  || ( this.percent == 100 && value > 0 ) ) {
-      console.log('same percent= [' + this.percent + ']');
-      return;
-    } else {
-      this.percent += value;
-      console.log('percent= [' + this.percent + ']');
-    }
-  }
 }
