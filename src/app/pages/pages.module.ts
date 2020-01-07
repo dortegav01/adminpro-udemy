@@ -13,6 +13,7 @@ import {FormsModule} from '@angular/forms';
 import {AppModule} from '../app.module';
 import {IncreaserComponent} from '../components/increaser/increaser.component';
 import {GraficoDonaComponent} from '../components/grafico-dona/grafico-dona.component';
+import { AccountSettingComponent } from './account-setting/account-setting.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {GraficoDonaComponent} from '../components/grafico-dona/grafico-dona.comp
     ProgressComponent,
     Graficas1Component,
     IncreaserComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    AccountSettingComponent
   ],
   imports: [
     SharedModule,
