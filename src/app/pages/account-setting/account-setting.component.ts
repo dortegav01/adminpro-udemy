@@ -11,7 +11,9 @@ export class AccountSettingComponent implements OnInit {
 
   constructor( public mySettings: SettingsService ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.putCheck();
+  }
 
   changeColour(theme: string, link: any) {
     console.log( link );
@@ -31,5 +33,19 @@ export class AccountSettingComponent implements OnInit {
 
     link.classList.add('working');
 
+  }
+
+  putCheck() {
+    const selectors = document.getElementsByClassName('selector');
+
+    const theme = this.mySettings.settings.theme;
+
+    for (let i = 0; i < selectors.length; i++ ) {
+      const ref = selectors[i];
+      if ( ref.getAttribute('data-theme') === theme ) {
+       ref.classList.add('working');
+       i = selectors.length;
+      }
+    }
   }
 }
