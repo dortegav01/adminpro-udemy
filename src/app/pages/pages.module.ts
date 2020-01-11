@@ -14,6 +14,7 @@ import {AppModule} from '../app.module';
 import {IncreaserComponent} from '../components/increaser/increaser.component';
 import {GraficoDonaComponent} from '../components/grafico-dona/grafico-dona.component';
 import { AccountSettingComponent } from './account-setting/account-setting.component';
+import { PromisesComponent } from './promises/promises.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { AccountSettingComponent } from './account-setting/account-setting.compo
     Graficas1Component,
     IncreaserComponent,
     GraficoDonaComponent,
-    AccountSettingComponent
+    AccountSettingComponent,
+    PromisesComponent
   ],
   imports: [
     SharedModule,
